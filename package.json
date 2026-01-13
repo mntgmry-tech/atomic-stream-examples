@@ -1,0 +1,39 @@
+{
+  "name": "atomic-stream-examples",
+  "version": "1.0.0",
+  "description": "Example x402 client for AtomicStream WebSocket streams with automatic payment handling",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "keypair-to-base58": "ts-node scripts/solana-keypair-to-base58.ts"
+  },
+  "keywords": [
+    "x402",
+    "solana",
+    "websocket",
+    "streaming",
+    "payment",
+    "atomicstream"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@solana/kit": "^5.3.0",
+    "@x402/core": "^2.2.0",
+    "@x402/fetch": "^2.2.0",
+    "@x402/svm": "^2.2.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.6.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
