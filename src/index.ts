@@ -502,8 +502,8 @@ async function createClient() {
   const client = new x402Client()
   const schemeV1 = new ExactSvmSchemeV1(signer)
   const schemeV2 = new ExactSvmScheme(signer)
-  const v1Networks = ['solana', 'solana-devnet', 'solana-testnet'] as const
   const v2Networks = [SOLANA_MAINNET_CAIP2, SOLANA_DEVNET_CAIP2, SOLANA_TESTNET_CAIP2] as const
+  const v1Networks = new Set<string>(['solana', 'solana-devnet', 'solana-testnet', ...v2Networks])
   for (const network of v1Networks) {
     client.registerV1(network, schemeV1)
   }
