@@ -1,5 +1,7 @@
 # AtomicStream x402 Client Example
 
+![AtomicStream Mempool Stream](atomicstream-mempool.gif)
+
 A TypeScript WebSocket client for consuming real-time Solana blockchain data streams from [AtomicStream](https://x402.atomicstream.net) using the x402 payment protocol.
 
 ## What is x402?
